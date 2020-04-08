@@ -1,156 +1,157 @@
-Afghanistan,Afghanistan,Asia
-Albania,Albania,Europe
-Algeria,Algeria,Africa
-Andorra,Andorra,Europe
-Antigua and Barbuda,Antigua and Barbuda,North America
-Argentina,Argentina,South America
-Armenia,Armenia,Asia
-Aruba,Aruba,South America
-Australia,Australia,Oceania
-Austria,Austria,Europe
-Azerbaijan,Azerbaijan,Asia
-Bahrain,Bahrain,Arab
-Bangladesh,Bangladesh,Asia
-Belarus,Belarus,Europe
-Belgium,Belgium,Europe
-Benin,Benin,Africa
-Bhutan,Bhutan,Asia
-Bolivia,Bolivia,South America
-Bosnia and Herzegovina,Bosnia and Herzegovina,Europe
-Brazil,Brazil,South America
-Brunei,Brunei,Asia
-Bulgaria,Bulgaria,Europe
-Burkina Faso,Burkina Faso,Africa
-Cambodia,Cambodia,Asia
-Cameroon,Cameroon,Africa
-Canada,Canada,North America
-Central African Republic,Central African Republic,Africa
-Chile,Chile,South America
-China,China,Asia
-Colombia,Colombia,South America
-Congo (Brazzaville),Congo (Brazzaville),Africa
-Congo (Kinshasa),Congo (Kinshasa),Africa
-Costa Rica,Costa Rica,North America
-Cote d'Ivoire,Cote d'Ivoire,Africa
-Croatia,Croatia,Europe
-Cruise Ship,Cruise Ship,#N/A
-Cuba,Cuba,North America
-Cyprus,Cyprus,Asia
-Czechia,Czechia,Europe
-Denmark,Denmark,Europe
-Dominican Republic,Dominican Republic,North America
-Ecuador,Ecuador,South America
-Egypt,Egypt,Arab
-Equatorial Guinea,Equatorial Guinea,Africa
-Estonia,Estonia,Europe
-Eswatini,Eswatini,Africa
-Ethiopia,Ethiopia,Africa
-Finland,Finland,Europe
-France,France,Europe
-French Guiana,French Guiana,South America
-Gabon,Gabon,Africa
-Georgia,Georgia,Asia
-Germany,Germany,Europe
-Ghana,Ghana,Africa
-Greece,Greece,Europe
-Greenland,Greenland,North America
-Guadeloupe,Guadeloupe,North America
-Guam,Guam,Oceania
-Guatemala,Guatemala,North America
-Guernsey,Guernsey,Europe
-Guinea,Guinea,Africa
-Guyana,Guyana,South America
-Holy See,Holy See,Europe
-Honduras,Honduras,North America
-Hungary,Hungary,Europe
-Iceland,Iceland,Europe
-India,India,Asia
-Indonesia,Indonesia,Asia
-Iran,Iran,Asia
-Iraq,Iraq,Arab
-Ireland,Ireland,Europe
-Israel,Israel,Asia
-Italy,Italy,Europe
-Jamaica,Jamaica,North America
-Japan,Japan,Asia
-Jersey,Jersey,Europe
-Jordan,Jordan,Arab
-Kazakhstan,Kazakhstan,Asia
-Kenya,Kenya,Africa
-"Korea, South",South Korea,Asia
-Kosovo,Kosovo,Europe
-Kuwait,Kuwait,Arab
-Latvia,Latvia,Europe
-Lebanon,Lebanon,Arab
-Liberia,Liberia,Africa
-Liechtenstein,Liechtenstein,Europe
-Lithuania,Lithuania,Europe
-Luxembourg,Luxembourg,Europe
-Malaysia,Malaysia,Asia
-Maldives,Maldives,Asia
-Malta,Malta,Europe
-Martinique,Martinique,North America
-Mauritania,Mauritania,Africa
-Mayotte,Mayotte,Africa
-Mexico,Mexico,North America
-Moldova,Moldova,Europe
-Monaco,Monaco,Europe
-Mongolia,Mongolia,Asia
-Morocco,Morocco,Africa
-Namibia,Namibia,Africa
-Nepal,Nepal,Asia
-Netherlands,Netherlands,Europe
-New Zealand,New Zealand,Oceania
-Nigeria,Nigeria,Africa
-North Macedonia,North Macedonia,Europe
-Norway,Norway,Europe
-occupied Palestinian territory,Palestinian territories,Arab
-Oman,Oman,Arab
-Pakistan,Pakistan,Asia
-Panama,Panama,North America
-Paraguay,Paraguay,South America
-Peru,Peru,South America
-Philippines,Philippines,Asia
-Poland,Poland,Europe
-Portugal,Portugal,Europe
-Puerto Rico,Puerto Rico,North America
-Qatar,Qatar,Arab
-Republic of the Congo,Republic of the Congo,Africa
-Reunion,Reunion,Africa
-Romania,Romania,Europe
-Russia,Russia,Europe
-Rwanda,Rwanda,Africa
-Saint Lucia,Saint Lucia,North America
-Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,North America
-San Marino,San Marino,Europe
-Saudi Arabia,Saudi Arabia,Arab
-Senegal,Senegal,Africa
-Serbia,Serbia,Europe
-Seychelles,Seychelles,Africa
-Singapore,Singapore,Asia
-Slovakia,Slovakia,Europe
-Slovenia,Slovenia,Europe
-Somalia,Somalia,Africa
-South Africa,South Africa,Africa
-Spain,Spain,Europe
-Sri Lanka,Sri Lanka,Asia
-Sudan,Sudan,Arab
-Suriname,Suriname,South America
-Sweden,Sweden,Europe
-Switzerland,Switzerland,Europe
-Taiwan*,Taiwan*,Asia
-Tanzania,Tanzania,Africa
-Thailand,Thailand,Asia
-The Bahamas,The Bahamas,North America
-Togo,Togo,Africa
-Trinidad and Tobago,Trinidad and Tobago,North America
-Tunisia,Tunisia,Arab
-Turkey,Turkey,Asia
-Ukraine,Ukraine,Europe
-United Arab Emirates,United Arab Emirates,Arab
-United Kingdom,United Kingdom,Europe
-Uruguay,Uruguay,South America
-US,US,North America
-Uzbekistan,Uzbekistan,Asia
-Venezuela,Venezuela,South America
-Vietnam,Vietnam,Asia
+Country,Name,Continent,Group1,Color
+Afghanistan,Afghanistan,Asia,,
+Albania,Albania,Europe,,
+Algeria,Algeria,Africa,,
+Andorra,Andorra,Europe,,
+Antigua and Barbuda,Antigua and Barbuda,North America,,
+Argentina,Argentina,South America,,
+Armenia,Armenia,Asia,,
+Aruba,Aruba,South America,,
+Australia,Australia,Oceania,,
+Austria,Austria,Europe,,
+Azerbaijan,Azerbaijan,Asia,,
+Bahrain,Bahrain,Arab,,
+Bangladesh,Bangladesh,Asia,,
+Belarus,Belarus,Europe,,
+Belgium,Belgium,Europe,,
+Benin,Benin,Africa,,
+Bhutan,Bhutan,Asia,,
+Bolivia,Bolivia,South America,,
+Bosnia and Herzegovina,Bosnia and Herzegovina,Europe,,
+Brazil,Brazil,South America,,
+Brunei,Brunei,Asia,,
+Bulgaria,Bulgaria,Europe,,
+Burkina Faso,Burkina Faso,Africa,,
+Cambodia,Cambodia,Asia,,
+Cameroon,Cameroon,Africa,,
+Canada,Canada,North America,,
+Central African Republic,Central African Republic,Africa,,
+Chile,Chile,South America,,
+China,China,Asia,,
+Colombia,Colombia,South America,,
+Congo (Brazzaville),Congo (Brazzaville),Africa,,
+Congo (Kinshasa),Congo (Kinshasa),Africa,,
+Costa Rica,Costa Rica,North America,,
+Cote d'Ivoire,Cote d'Ivoire,Africa,,
+Croatia,Croatia,Europe,,
+Cruise Ship,Cruise Ship,#N/A,,
+Cuba,Cuba,North America,,
+Cyprus,Cyprus,Asia,,
+Czechia,Czechia,Europe,,
+Denmark,Denmark,Europe,,
+Dominican Republic,Dominican Republic,North America,,
+Ecuador,Ecuador,South America,,
+Egypt,Egypt,Arab,,
+Equatorial Guinea,Equatorial Guinea,Africa,,
+Estonia,Estonia,Europe,,
+Eswatini,Eswatini,Africa,,
+Ethiopia,Ethiopia,Africa,,
+Finland,Finland,Europe,,
+France,France,Europe,,
+French Guiana,French Guiana,South America,,
+Gabon,Gabon,Africa,,
+Georgia,Georgia,Asia,,
+Germany,Germany,Europe,,
+Ghana,Ghana,Africa,,
+Greece,Greece,Europe,,
+Greenland,Greenland,North America,,
+Guadeloupe,Guadeloupe,North America,,
+Guam,Guam,Oceania,,
+Guatemala,Guatemala,North America,,
+Guernsey,Guernsey,Europe,,
+Guinea,Guinea,Africa,,
+Guyana,Guyana,South America,,
+Holy See,Holy See,Europe,,
+Honduras,Honduras,North America,,
+Hungary,Hungary,Europe,,
+Iceland,Iceland,Europe,,
+India,India,Asia,,
+Indonesia,Indonesia,Asia,,
+Iran,Iran,Asia,,
+Iraq,Iraq,Arab,,
+Ireland,Ireland,Europe,,
+Israel,Israel,Asia,,
+Italy,Italy,Europe,,
+Jamaica,Jamaica,North America,,
+Japan,Japan,Asia,,
+Jersey,Jersey,Europe,,
+Jordan,Jordan,Arab,,
+Kazakhstan,Kazakhstan,Asia,,
+Kenya,Kenya,Africa,,
+"Korea, South",South Korea,Asia,,
+Kosovo,Kosovo,Europe,,
+Kuwait,Kuwait,Arab,,
+Latvia,Latvia,Europe,,
+Lebanon,Lebanon,Arab,,
+Liberia,Liberia,Africa,,
+Liechtenstein,Liechtenstein,Europe,,
+Lithuania,Lithuania,Europe,,
+Luxembourg,Luxembourg,Europe,,
+Malaysia,Malaysia,Asia,,
+Maldives,Maldives,Asia,,
+Malta,Malta,Europe,,
+Martinique,Martinique,North America,,
+Mauritania,Mauritania,Africa,,
+Mayotte,Mayotte,Africa,,
+Mexico,Mexico,North America,,
+Moldova,Moldova,Europe,,
+Monaco,Monaco,Europe,,
+Mongolia,Mongolia,Asia,,
+Morocco,Morocco,Africa,,
+Namibia,Namibia,Africa,,
+Nepal,Nepal,Asia,,
+Netherlands,Netherlands,Europe,,
+New Zealand,New Zealand,Oceania,,
+Nigeria,Nigeria,Africa,,
+North Macedonia,North Macedonia,Europe,,
+Norway,Norway,Europe,,
+occupied Palestinian territory,occupied Palestinian territory,Arab,,
+Oman,Oman,Arab,,
+Pakistan,Pakistan,Asia,,
+Panama,Panama,North America,,
+Paraguay,Paraguay,South America,,
+Peru,Peru,South America,,
+Philippines,Philippines,Asia,,
+Poland,Poland,Europe,,
+Portugal,Portugal,Europe,,
+Puerto Rico,Puerto Rico,North America,,
+Qatar,Qatar,Arab,,
+Republic of the Congo,Republic of the Congo,Africa,,
+Reunion,Reunion,Africa,,
+Romania,Romania,Europe,,
+Russia,Russia,Europe,,
+Rwanda,Rwanda,Africa,,
+Saint Lucia,Saint Lucia,North America,,
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,North America,,
+San Marino,San Marino,Europe,,
+Saudi Arabia,Saudi Arabia,Arab,,
+Senegal,Senegal,Africa,,
+Serbia,Serbia,Europe,,
+Seychelles,Seychelles,Africa,,
+Singapore,Singapore,Asia,,
+Slovakia,Slovakia,Europe,,
+Slovenia,Slovenia,Europe,,
+Somalia,Somalia,Africa,,
+South Africa,South Africa,Africa,,
+Spain,Spain,Europe,,
+Sri Lanka,Sri Lanka,Asia,,
+Sudan,Sudan,Arab,,
+Suriname,Suriname,South America,,
+Sweden,Sweden,Europe,,
+Switzerland,Switzerland,Europe,,
+Taiwan*,Taiwan*,Asia,,
+Tanzania,Tanzania,Africa,,
+Thailand,Thailand,Asia,,
+The Bahamas,The Bahamas,North America,,
+Togo,Togo,Africa,,
+Trinidad and Tobago,Trinidad and Tobago,North America,,
+Tunisia,Tunisia,Arab,,
+Turkey,Turkey,Asia,,
+Ukraine,Ukraine,Europe,,
+United Arab Emirates,United Arab Emirates,Arab,,
+United Kingdom,United Kingdom,Europe,,
+Uruguay,Uruguay,South America,,
+US,US,North America,,
+Uzbekistan,Uzbekistan,Asia,,
+Venezuela,Venezuela,South America,,
+Vietnam,Vietnam,Asia,,
