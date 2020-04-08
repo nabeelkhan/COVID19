@@ -52,10 +52,10 @@
   In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported in Asia.
   Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['CN Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['CN Cases (+)'] / D['Cases (+)']) }}) are from <b>China</b>.
   <b>India</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['IN Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
-{% elif KPI_CASE == 'Arab World' %}
+{% elif KPI_CASE == 'Arab-World' %}
   In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported in GCC and Arab World.
-  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['CN Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['CN Cases (+)'] / D['Cases (+)']) }}) are from <b>China</b>.
-  <b>Kuwait</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['IN Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
+  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['SA Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['SA Cases (+)'] / D['Cases (+)']) }}) are from <b>Saudi Arabia</b>.
+  <b>Kuwait</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['KU Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
 {% else %}
   ''
 {% endif %}
