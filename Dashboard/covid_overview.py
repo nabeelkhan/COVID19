@@ -2,8 +2,8 @@ import pandas as pd
 import getpass
 
 
-base_url = 'https://raw.githubusercontent.com/pratapvardhan/notebooks/master/covid19/'
-base_url = '' if (getpass.getuser() == 'Pratap Vardhan') else base_url
+base_url = 'https://raw.githubusercontent.com/nabeelkhan/COVID19/master/Dashboard/'
+base_url = '' if (getpass.getuser() == 'Nabeel Khan') else base_url
 paths = {
     'mapping': base_url + 'mapping_countries.csv',
     'overview': base_url + 'overview.tpl'
