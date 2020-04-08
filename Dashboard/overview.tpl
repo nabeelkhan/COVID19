@@ -7,8 +7,8 @@
 {% set STRIP_WIDTH = (WIDTH_REGION // newcases.shape[1] + 1) %}
 {% set LEGEND_RANGE = ['rgba(255, 152, 0, 0.1)', 'rgba(255, 152, 0, 0.4)', 'rgba(255, 152, 0, 0.7)', 'rgba(255, 152, 0, 1)'] %}
 {% set TOPLINKS = TOPLINKS or [
-  {'title': 'World', 'href': '../covid-overview/'}, {'title': 'US', 'href': '../covid-overview-us/'},
-  {'title': 'Europe', 'href': '../covid-overview-europe/'}] %}
+  {'title': 'World', 'href': '../covid-overview/'}, {'title': 'Arab World', 'href': '../covid-overview-arab/'},
+  {'title': 'US', 'href': '../covid-overview-us/'}, {'title': 'Europe', 'href': '../covid-overview-europe/'}] %}
 {% set lastdays = (D['updated'] - D['since']).days %}
 
 {% macro kpi(name, number, growth, growcls='') -%}
@@ -52,6 +52,10 @@
   In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported in Asia.
   Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['CN Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['CN Cases (+)'] / D['Cases (+)']) }}) are from <b>China</b>.
   <b>India</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['IN Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
+{% elif KPI_CASE == 'Arab World' %}
+  In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported in GCC and Arab World.
+  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['CN Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['CN Cases (+)'] / D['Cases (+)']) }}) are from <b>China</b>.
+  <b>Kuwait</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['IN Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
 {% else %}
   ''
 {% endif %}
