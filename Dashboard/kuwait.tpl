@@ -24,6 +24,7 @@
     <div class="kpi-hed">{{ title }}</div>
     <div class="d-flex kpi-box">
       {{ kpi(name='Cases', number=D[prefix + ' Cases'], growth=D[prefix + ' Cases (+)']) }}
+      {{ kpi(name='Recovered', number=D[prefix + ' Recovered'], growth=D[prefix + ' Recovered (+)']) }}      
       {{ kpi(name='Deaths', number=D[prefix + ' Deaths'], growth=D[prefix + ' Deaths (+)']) }}
     </div>
   </div>
@@ -53,9 +54,9 @@
   Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['CN Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['CN Cases (+)'] / D['Cases (+)']) }}) are from <b>China</b>.
   <b>India</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['IN Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
 {% elif KPI_CASE == 'Arab-World' %}
-  In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported in GCC and Arab World.
-  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['SA Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['SA Cases (+)'] / D['Cases (+)']) }}) are from <b>Saudi Arabia</b>.
-  <b>Kuwait</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['KU Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
+  In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported in GCC.
+  <b>Saudi Arabia</b> reported <b class="color-neg">{{ '{0:,.0f}'.format(D['SA Cases (+)']) }}</b>, which is ({{ "{0:.0%}".format(D['SA Cases (+)'] / D['Cases (+)']) }}) of GCC.
+  <br><b>Kuwait</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['KU Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
 {% else %}
   ''
 {% endif %}
@@ -91,6 +92,7 @@
     <div class="kpi-hed text-center">{{ KPI_CASE }}</div>
     <div class="d-flex kpi-box">
       {{ kpi(name='Confirmed Cases', number=D['Cases'], growth=D['Cases (+)']) }}
+      {{ kpi(name='Recovered Cases', number=D['Recovered'], growth=D['Recovered (+)']) }}      
       {{ kpi(name='Deaths', number=D['Deaths'], growth=D['Deaths (+)']) }}
     </div>
   </div>
@@ -134,6 +136,8 @@
         <td style="vertical-align: middle;">{{ plotstrip(arr=newcases.loc[row[COL_REGION]].values) }}</td>
         <td class="pl1"><b>{{ '{0:,.0f}'.format(row['Cases']) }}</b></td>
         <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Cases (+)']) }}</b>)</td>
+        <td class="pl1"><b>{{ '{0:,.0f}'.format(row['Recovered']) }}</b></td>
+        <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Recovered (+)']) }}</b>)</td>        
         <td class="pl1">{{ '{0:,.0f}'.format(row['Deaths']) }}</td>
         <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Deaths (+)']) }}</b>)</td>
         <td class="pl1">{{ row['Fatality Rate'] }}%</td>
