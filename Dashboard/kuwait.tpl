@@ -23,8 +23,8 @@
   <div class="kpi-sm">
     <div class="kpi-hed">{{ title }}</div>
     <div class="d-flex kpi-box">
-      {{ kpi(name='Cases', number=D[prefix + ' Cases'], growth=D[prefix + ' Cases 3(+)']) }}
-      {{ kpi(name='Deaths', number=D[prefix + ' Deaths'], growth=D[prefix + ' Deaths 3(+)']) }}
+      {{ kpi(name='Cases', number=D[prefix + ' Cases'], growth=D[prefix + ' Cases (+)']) }}
+      {{ kpi(name='Deaths', number=D[prefix + ' Deaths'], growth=D[prefix + ' Deaths (+)']) }}
     </div>
   </div>
 {%- endmacro %}
@@ -37,24 +37,24 @@
 
 {% macro narrative() -%}
 {% if KPI_CASE == 'World' %}
-  In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported worldwide.
-  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['EU Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['EU Cases (+)'] / D['Cases (+)']) }}) are from <b>Europe</b>.
+  In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases 3(+)']) }}</b> new Coronavirus cases have been reported worldwide.
+  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['EU Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['EU Cases (+)'] / D['Cases 3(+)']) }}) are from <b>Europe</b>.
   <b>China</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['China Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
 {% elif KPI_CASE == 'US' %}
   In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported in the US.
-  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['NY Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['NY Cases (+)'] / D['Cases (+)']) }}) are from <b>New York</b> State.
+  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['NY Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['NY Cases (+)'] / D['Cases 3(+)']) }}) are from <b>New York</b> State.
   <b>Washington</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['WA Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
 {% elif KPI_CASE == 'Europe' %}
   In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported in the Europe.
-  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['IT Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['IT Cases (+)'] / D['Cases (+)']) }}) are from <b>Italy</b>.
+  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['IT Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['IT Cases (+)'] / D['Cases 3(+)']) }}) are from <b>Italy</b>.
   <b>Spain</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['SP Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
 {% elif KPI_CASE == 'Asia' %}
   In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported in Asia.
-  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['CN Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['CN Cases (+)'] / D['Cases (+)']) }}) are from <b>China</b>.
+  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['CN Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['CN Cases (+)'] / D['Cases 3(+)']) }}) are from <b>China</b>.
   <b>India</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['IN Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
 {% elif KPI_CASE == 'Arab-World' %}
   In the last <b>{{ lastdays }} days</b>, <b class="color-neg">{{ '{0:,.0f}'.format(D['Cases (+)']) }}</b> new Coronavirus cases have been reported in GCC and Arab World.
-  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['SA Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['SA Cases (+)'] / D['Cases (+)']) }}) are from <b>Saudi Arabia</b>.
+  Of which <b class="color-neg">{{ '{0:,.0f}'.format(D['SA Cases (+)']) }}</b> ({{ "{0:.0%}".format(D['SA Cases (+)'] / D['Cases 3(+)']) }}) are from <b>Saudi Arabia</b>.
   <b>Kuwait</b> has reported <b class="color-neg">{{ '{0:,.0f}'.format(D['KU Cases (+)']) }}</b> new cases in the last {{ lastdays }} days.
 {% else %}
   ''
@@ -133,9 +133,9 @@
         <td class="mw"><b>{{ row[COL_REGION] }}</b></td>
         <td style="vertical-align: middle;">{{ plotstrip(arr=newcases.loc[row[COL_REGION]].values) }}</td>
         <td class="pl1"><b>{{ '{0:,.0f}'.format(row['Cases']) }}</b></td>
-        <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Cases (+)']) }}</b>)</td>
+        <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Cases 3(+)']) }}</b>)</td>
         <td class="pl1">{{ '{0:,.0f}'.format(row['Deaths']) }}</td>
-        <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Deaths (+)']) }}</b>)</td>
+        <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Deaths 3(+)']) }}</b>)</td>
         <td class="pl1">{{ row['Fatality Rate'] }}%</td>
       </tr>
     {% endfor %}
