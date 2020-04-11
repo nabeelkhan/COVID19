@@ -58,9 +58,9 @@ def gen_data(region='Country/Region', filter_frame=lambda x: x, add_table=[], kp
     dft_deaths = get_frame('deaths').pipe(filter_frame)
     latest_date_idx, dt_cols = get_dates(df)
     dt_today = dt_cols[latest_date_idx]
-    dt_3ago = dt_cols[LAST_DATE_I-3]
-    dt_5ago = dt_cols[LAST_DATE_I-5]
-    dt_7ago = dt_cols[LAST_DATE_I-7]
+    dt_3ago = dt_cols[latest_date_idx - 3]
+    dt_5ago = dt_cols[latest_date_idx - 5]
+    dt_7ago = dt_cols[latest_date_idx - 7]
 
     dfc_cases = dft_cases.groupby(col_region)[dt_today].sum()
     dfc_deaths = dft_deaths.groupby(col_region)[dt_today].sum()
