@@ -6,7 +6,7 @@ base_url = 'https://raw.githubusercontent.com/nabeelkhan/COVID19/master/Dashboar
 base_url = '' if (getpass.getuser() == 'Nabeel Khan') else base_url
 paths = {
     'mapping': base_url + 'mapping_countries.csv',
-    'overview': base_url + 'kuwait.tpl'
+    'kuwait': base_url + 'kuwait.tpl'
 }
 
 
