@@ -5,7 +5,7 @@
 {% set LEGEND_DOMAIN = LEGEND_DOMAIN or [10, 100, 1000, np.inf] %}
 {% set WIDTH_REGION, WIDTH_STRIP = 120, 140 %}
 {% set STRIP_WIDTH = (WIDTH_REGION // newcases.shape[1] + 1) %}
-{% set LEGEND_RANGE = ['rgba(255, 152, 0, 0.1)', 'rgba(255, 152, 0, 0.4)', 'rgba(255, 152, 0, 0.7)', 'rgba(255, 152, 0, 1)'] %}
+{% set LEGEND_RANGE = ['rgba(170, 0, 255, 0.1)', 'rgba(170, 0, 255, 0.4)', 'rgba(170, 0, 255, 0.7)', 'rgba(170, 0, 255, 1)'] %}
 {% set TOPLINKS = TOPLINKS or [
   {'title': 'World', 'href': '../covid-overview/'}, {'title': 'Arab-World', 'href': '../covid-overview-arab/'},
   {'title': 'US', 'href': '../covid-overview-us/'}, {'title': 'Europe', 'href': '../covid-overview-europe/'}] %}
