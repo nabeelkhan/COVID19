@@ -1,2 +1,0 @@
-- name: run-notebook
-  uses: yaananth/run-notebook@v1
