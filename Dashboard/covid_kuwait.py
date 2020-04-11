@@ -86,7 +86,7 @@ def gen_data(region='Country/Region', filter_frame=lambda x: x, add_table=[], kp
     s_kpis = pd.concat([
         kpi_of(x['title'], f'{x["prefix"]} ', x.get('pipe'))
         for x in kpis_info])
-    summary = {'updated': pd.to_datetime(dt_today), 'since': pd.to_datetime(dt_5ago)}
+    summary = {'updated': pd.to_datetime(dt_today), 'since': pd.to_datetime(dt_3ago)}
     summary = {**summary, **df_table[metrics].sum(), **s_kpis}
     dft_ct_cases = dft_cases.groupby(col_region)[dt_cols].sum()
     dft_ct_new_cases = dft_ct_cases.diff(axis=1).fillna(0).astype(int)
@@ -124,7 +124,7 @@ def gen_data_us(region='Province/State', kpis_info=[]):
         kpi_of(x['title'], f'{x["prefix"]} ', x.get('pipe'))
         for x in kpis_info])
 
-    summary = {'updated': pd.to_datetime(dt_today), 'since': pd.to_datetime(dt_5ago)}
+    summary = {'updated': pd.to_datetime(dt_today), 'since': pd.to_datetime(dt_3ago)}
     summary = {**summary, **df_table[metrics].sum(), **s_kpis}
     dft_ct_new_cases = dft_ct_cases.diff(axis=1).fillna(0).astype(int)
     data = {'summary': summary, 'table': df_table, 'newcases': dft_ct_new_cases}
