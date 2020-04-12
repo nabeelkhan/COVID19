@@ -91,8 +91,7 @@
   <div>
     <div class="kpi-hed text-center">{{ KPI_CASE }}</div>
     <div class="d-flex kpi-box">
-      {{ kpi(name='Confirmed Cases', number=D['Cases'], growth=D['Cases (+)']) }}
-      {{ kpi(name='Recovered Cases', number=D['Recovered'], growth=D['Recovered (+)']) }}      
+      {{ kpi(name='Confirmed Cases', number=D['Cases'], growth=D['Cases (+)']) }}   
       {{ kpi(name='Deaths', number=D['Deaths'], growth=D['Deaths (+)']) }}
     </div>
   </div>
