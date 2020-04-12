@@ -91,7 +91,8 @@
   <div>
     <div class="kpi-hed text-center">{{ KPI_CASE }}</div>
     <div class="d-flex kpi-box">
-      {{ kpi(name='Confirmed Cases', number=D['Cases'], growth=D['Cases (+)']) }}   
+      {{ kpi(name='Confirmed Cases', number=D['Cases'], growth=D['Cases (+)']) }}
+      {{ kpi(name='Recovered Cases', number=D['Recovered'], growth=D['Recovered (+)']) }}      
       {{ kpi(name='Deaths', number=D['Deaths'], growth=D['Deaths (+)']) }}
     </div>
   </div>
@@ -114,6 +115,7 @@
         <th class="text-left" style="width:{{ WIDTH_STRIP }}px;">New Cases</th>
         <th class="text-left" colspan="2">Total Cases</th>
         <th colspan="2">Recovered</th>    
+        <th class="fs9" >Recovery</th>        
         <th colspan="2">Deaths</th>
         <th class="fs9" >Fatality</th>
       </tr>
@@ -137,7 +139,8 @@
         <td class="pl1"><b>{{ '{0:,.0f}'.format(row['Cases']) }}</b></td>
         <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Cases (+)']) }}</b>)</td>
         <td class="pl1"><b>{{ '{0:,.0f}'.format(row['Recovered']) }}</b></td>
-        <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Recovered (+)']) }}</b>)</td>        
+        <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Recovered (+)']) }}</b>)</td>
+        <td class="pl1">{{ row['Recovery Rate'] }}%</td>
         <td class="pl1">{{ '{0:,.0f}'.format(row['Deaths']) }}</td>
         <td class="change neg">(<b>{{ '{0:+,.0f}'.format(row['Deaths (+)']) }}</b>)</td>
         <td class="pl1">{{ row['Fatality Rate'] }}%</td>
