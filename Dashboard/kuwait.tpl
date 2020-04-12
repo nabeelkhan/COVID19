@@ -1,14 +1,14 @@
 {# D, table, newcases, np, pd  #}
 {% set COL_REGION = COL_REGION or 'Country/Region' %}
-{% set KPI_CASE = KPI_CASE or 'World' %}
-{% set KPIS_INFO = KPIS_INFO or [{'title': 'China', 'prefix': 'China'}, {'title': 'Europe', 'prefix': 'EU'}, {'title': 'U.S.', 'prefix': 'US'}] %}
+{% set KPI_CASE = KPI_CASE or 'GCC' %}
+{% set KPIS_INFO = KPIS_INFO or [{'title': 'Kuwait', 'prefix': 'KU'}, {'title': 'Saudi Arabia', 'prefix': 'SA'}, {'title': 'United Arab Emirates', 'prefix': 'AE'}] %}
 {% set LEGEND_DOMAIN = LEGEND_DOMAIN or [10, 100, 1000, np.inf] %}
 {% set WIDTH_REGION, WIDTH_STRIP = 120, 140 %}
 {% set STRIP_WIDTH = (WIDTH_REGION // newcases.shape[1] + 1) %}
 {% set LEGEND_RANGE = ['rgba(170, 0, 255, 0.1)', 'rgba(170, 0, 255, 0.4)', 'rgba(170, 0, 255, 0.7)', 'rgba(170, 0, 255, 1)'] %}
 {% set TOPLINKS = TOPLINKS or [
-  {'title': 'World', 'href': '../covid-overview/'}, {'title': 'Arab-World', 'href': '../covid-overview-arab/'},
-  {'title': 'US', 'href': '../covid-overview-us/'}, {'title': 'Europe', 'href': '../covid-overview-europe/'}] %}
+  {'title': 'Kuwait', 'href': '../Kuwait/'}, {'title': 'Saudi Arabia', 'href': '../Saudi-Arabia/'},
+  {'title': 'United Arab Emirates', 'href': '../United-Arab-Emirates/'}] %}
 {% set lastdays = (D['updated'] - D['since']).days %}
 
 {% macro kpi(name, number, growth, growcls='') -%}
