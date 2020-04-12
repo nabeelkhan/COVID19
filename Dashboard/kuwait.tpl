@@ -91,9 +91,9 @@
   <div>
     <div class="kpi-hed text-center">{{ KPI_CASE }}</div>
     <div class="d-flex kpi-box">
-      {{ kpi(name='Confirmed Cases', number=D['Cases'], growth=D['Cases (+)']) }}
-      {{ kpi(name='Recovered Cases', number=D['Recovered'], growth=D['Recovered (+)']) }}      
-      {{ kpi(name='Deaths', number=D['Deaths'], growth=D['Deaths (+)']) }}
+      {{ kpi(name='Confirmed Cases', number=D['GCC Cases'], growth=D['GCC Cases (+)']) }}
+      {{ kpi(name='Recovered Cases', number=D['GCC Recovered'], growth=D['GCC Recovered (+)']) }}      
+      {{ kpi(name='Deaths', number=D['GCC Deaths'], growth=D['GCC Deaths (+)']) }}
     </div>
   </div>
   <p class="text-center text-uppercase fs9">Updated on <b>{{ D['updated'].strftime('%B %d, %Y') }}</b> ( +change since {{ lastdays }} days ago.)</p>
