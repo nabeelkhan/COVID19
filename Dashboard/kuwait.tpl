@@ -7,8 +7,8 @@
 {% set STRIP_WIDTH = (WIDTH_REGION // newcases.shape[1] + 1) %}
 {% set LEGEND_RANGE = ['rgba(170, 0, 255, 0.1)', 'rgba(170, 0, 255, 0.4)', 'rgba(170, 0, 255, 0.7)', 'rgba(170, 0, 255, 1)'] %}
 {% set TOPLINKS = TOPLINKS or [
-  {'title': 'Kuwait', 'href': '../Kuwait/'}, {'title': 'Saudi Arabia', 'href': '../Saudi-Arabia/'},
-  {'title': 'United Arab Emirates', 'href': '../United-Arab-Emirates/'}] %}
+  {'title': 'Kuwait Part1', 'href': '../Kuwait-COVID19-Visualization-and-Prediction-v1/'}, {'title': 'Coming Soon', 'href': '../Kuwait-COVID19-Visualization-and-Prediction/'},
+  {'title': 'Coming Soon', 'href': '../Kuwait-COVID19-Visualization-and-Prediction/'}] %}
 {% set lastdays = (D['updated'] - D['since']).days %}
 
 {% macro kpi(name, number, growth, growcls='') -%}
